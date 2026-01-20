@@ -1,26 +1,43 @@
-# --- DotNet API (MediBilling.Api) ---
+# ----------------------------
+# .NET / C# / API
+# ----------------------------
 bin/
 obj/
 publish/
 out/
-
-# User settings
-.vs/
 *.user
 *.suo
-
-# Logs
 *.log
+*.vs/
+*.vscode/
+.vs/
+.vscode/
+*.db
+*.db-shm
+*.db-wal
 
-# --- Angular UI (medi-billing-ui) ---
+# Entity Framework
+Migrations/*.Designer.cs
+Migrations/*Snapshot.cs
+
+# ----------------------------
+# Angular / UI
+# ----------------------------
 medi-billing-ui/node_modules/
 medi-billing-ui/dist/
 medi-billing-ui/.angular/
+medi-billing-ui/build-log.txt
+medi-billing-ui/ng_build.log
+medi-billing-ui/ng_build_verbose.log
 
 # Environment files
 medi-billing-ui/src/environments/*.ts
-medi-billing-ui/src/environments/*.prod.ts
 
-# OS / IDE
+# ----------------------------
+# IDE / OS
+# ----------------------------
 .DS_Store
 Thumbs.db
+*.log
+*.vs
+*.vscode

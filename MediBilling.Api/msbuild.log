@@ -1,0 +1,3 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+D:\MediBillingPro\mediBilling-v2\MediBilling.Api\Data\AppDbContext.cs(118,62): error CS1061: 'SaleInvoice' does not contain a definition for 'CreatedAt' and no accessible extension method 'CreatedAt' accepting a first argument of type 'SaleInvoice' could be found (are you missing a using directive or an assembly reference?) [D:\MediBillingPro\mediBilling-v2\MediBilling.Api\MediBilling.Api.csproj]

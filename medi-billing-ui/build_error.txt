@@ -1,0 +1,31 @@
+﻿npx : [1m[31mThis 
+version of CLI is 
+only compatible with 
+Angular versions 
+^17.0.0,
+At line:1 char:1
++ npx ng build 2>&1 
+| Out-File -FilePath 
+build_error.txt 
+-Encoding utf8 ...
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ([1m[3   
+ 1mThis v...rsion    
+s ^17.0.0,:Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+but Angular version 
+19.2.18 was found 
+instead.
+Please visit the 
+link below to find 
+instructions on how 
+to update Angular.
+https://update.angula
+r.io/[39m[22m

@@ -1,0 +1,136 @@
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  background: radial-gradient(circle at top left, #0ea5e9 0, #0f172a 40%, #020617 100%);
+  color: #0f172a;
+}
+
+.sidebar {
+  width: 240px;
+  background: rgba(15, 23, 42, 0.96);
+  backdrop-filter: blur(8px);
+  color: #e2e8f0;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: 0.05em;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+nav a {
+  color: #cbd5f5;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+
+nav a::before {
+  content: '●';
+  font-size: 7px;
+  color: #38bdf8;
+}
+
+nav a:hover {
+  background: rgba(148, 163, 184, 0.14);
+  transform: translateX(2px);
+}
+
+nav a.active {
+  background: linear-gradient(to right, #0ea5e9, #22c55e);
+  color: #0f172a;
+}
+
+nav a.active::before {
+  color: #0f172a;
+}
+
+.logout {
+  margin-top: 16px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(248, 113, 113, 0.45);
+  background: rgba(15, 23, 42, 0.6);
+  color: #fecaca;
+  cursor: pointer;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.logout:hover {
+  background: #ef4444;
+  border-color: #fecaca;
+  color: white;
+}
+
+.content {
+  flex: 1;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 16px;
+  }
+  nav {
+    flex-direction: row;
+    gap: 4px;
+  }
+  nav a {
+    padding-inline: 10px;
+  }
+  .logout {
+    margin-top: 0;
+    margin-left: 8px;
+  }
+  .content {
+    padding: 16px;
+  }
+}

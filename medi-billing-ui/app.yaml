@@ -1,0 +1,18 @@
+runtime: nodejs20
+env: standard
+service: default
+
+handlers:
+  # Serve all static files from the dist directory
+  - url: /
+    static_files: dist/medi-billing-ui/browser/index.html
+    upload: dist/medi-billing-ui/browser/index.html
+
+  - url: /(.*)
+    static_files: dist/medi-billing-ui/browser/\1
+    upload: dist/medi-billing-ui/browser/(.*)
+
+  # Catch-all for Angular routing
+  - url: /.*
+    static_files: dist/medi-billing-ui/browser/index.html
+    upload: dist/medi-billing-ui/browser/index.html

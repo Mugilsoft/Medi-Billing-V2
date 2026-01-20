@@ -1,0 +1,23 @@
+runtime: custom
+env: flex
+
+# Settings for the backend service
+service: backend
+
+# Resources can be adjusted based on needs
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
+
+# Scaling settings
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 2
+  cpu_utilization:
+    target_utilization: 0.6
+
+# Environment variables
+env_variables:
+  ASPNETCORE_ENVIRONMENT: "Production"
+  # Add other environment variables here (e.g., ConnectionStrings)

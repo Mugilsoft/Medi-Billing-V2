@@ -1,0 +1,26 @@
+# --- DotNet API (MediBilling.Api) ---
+bin/
+obj/
+publish/
+out/
+
+# User settings
+.vs/
+*.user
+*.suo
+
+# Logs
+*.log
+
+# --- Angular UI (medi-billing-ui) ---
+medi-billing-ui/node_modules/
+medi-billing-ui/dist/
+medi-billing-ui/.angular/
+
+# Environment files
+medi-billing-ui/src/environments/*.ts
+medi-billing-ui/src/environments/*.prod.ts
+
+# OS / IDE
+.DS_Store
+Thumbs.db
